@@ -64,7 +64,7 @@ class Student
     sql = <<-SQL
       SELECT * FROM students WHERE name = ? LIMIT 1
     SQL
-    student = DB[:conn].execute(sql, name)
+    student = DB[:conn].execute(sql,name)
 
   end
 

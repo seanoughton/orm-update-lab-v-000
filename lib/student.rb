@@ -57,6 +57,7 @@ class Student
 
   def self.new_from_db(array)
     student = self.new(array[0],array[1],array[2])
+    student.save
   end
 
   def self.find_by_name(name)

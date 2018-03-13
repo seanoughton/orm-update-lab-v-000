@@ -69,7 +69,7 @@ class Student
     SQL
     student = DB[:conn].execute(sql, name).collect do |row|
       self.new_from_db(row)
-    end
+    end.first
 
 
   end

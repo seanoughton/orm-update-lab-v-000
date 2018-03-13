@@ -60,4 +60,7 @@ class Student
     student = self.new(array[1],array[2],array[0])
   end
 
+  def self.find_by_name(name)
+  end
+
 end
